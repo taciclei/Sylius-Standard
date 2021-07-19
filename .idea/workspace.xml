@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a94cf0e6-8d72-45c5-a4db-2ef7ae6d2e53" name="Default Changelist" comment="[*] update docker">
+      <change afterPath="$PROJECT_DIR$/api/config/packages/mercure.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config/packages/test/security.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/config/packages/test_cached/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sylius-Standard.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/_sylius.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/_sylius.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/dev/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/dev/jms_serializer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/dev/security_checker.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/fos_rest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/fos_rest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/jms_serializer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/prod/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/prod/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/prod/jms_serializer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/test/security_checker.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/test_cached/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/packages/test_cached/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/packages/test_cached/security_checker.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/dev/twig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/sylius_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes/sylius_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/sylius_admin_api.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/sylius_shop.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes/sylius_shop.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/test/sylius_test_plugin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes/test/sylius_test_plugin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/routes/test_cached/sylius_test_plugin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/routes/test_cached/sylius_test_plugin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/docker/php/docker-entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/api/docker/php/docker-entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/AdminApi/AccessToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/AdminApi/AuthCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/AdminApi/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/AdminApi/RefreshToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Entity/Order/Adjustment.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Entity/Order/Adjustment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20170912085504.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20170913125128.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20171003103916.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20180102140039.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20190109095211.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20190109160409.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20190508083953.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20190621035710.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20191119131635.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20200110132702.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20200122082429.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/Migrations/Version20200202104152.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/api/composer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/config/bundles.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api/config/packages/_sylius.yaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="contact_taciclei_com@ws.taciclei.com:22 key" />
+  <component name="ProjectId" id="1vRmj4BgQMyc53fsrF121tuBYdo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="SSH Configuration" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="SSH Configuration" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/config/packages" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/config/packages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a94cf0e6-8d72-45c5-a4db-2ef7ae6d2e53" name="Default Changelist" comment="" />
+      <created>1626533407335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626533407335</updated>
+      <workItem from="1626533408799" duration="598000" />
+      <workItem from="1626534972641" duration="738000" />
+      <workItem from="1626535959673" duration="9371000" />
+      <workItem from="1626551300103" duration="3369000" />
+      <workItem from="1626600229535" duration="3773000" />
+      <workItem from="1626605233576" duration="1635000" />
+      <workItem from="1626607735500" duration="809000" />
+      <workItem from="1626612530959" duration="906000" />
+      <workItem from="1626714321995" duration="3519000" />
+      <workItem from="1626718726009" duration="750000" />
+      <workItem from="1626724372941" duration="5479000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="0a75f36f-8d05-4d56-a018-ac98afde66fb">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="0a75f36f-8d05-4d56-a018-ac98afde66fb" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[*] update docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="[*] update docker" />
+  </component>
+</project>

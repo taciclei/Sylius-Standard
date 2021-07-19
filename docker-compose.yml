@@ -37,8 +37,8 @@ services:
       context: ./pwa
       target: api_platform_pwa_prod
     environment:
-      API_PLATFORM_CLIENT_GENERATOR_ENTRYPOINT: http://caddy
-      NEXT_PUBLIC_ENTRYPOINT: http://caddy
+      API_PLATFORM_CLIENT_GENERATOR_ENTRYPOINT: http://ws.taciclei.com
+      NEXT_PUBLIC_ENTRYPOINT: http://ws.taciclei.com
 
   caddy:
     build:
@@ -46,10 +46,10 @@ services:
       target: api_platform_caddy
     depends_on:
       - php
-      - pwa
+      #- pwa
     environment:
       PWA_UPSTREAM: pwa:3000
-      SERVER_NAME: ${SERVER_NAME:-localhost, caddy:80}
+      SERVER_NAME: ${SERVER_NAME:-ws.taciclei.com, ws.taciclei.com:80}
       MERCURE_PUBLISHER_JWT_KEY: ${MERCURE_PUBLISHER_JWT_KEY:-!ChangeMe!}
       MERCURE_SUBSCRIBER_JWT_KEY: ${MERCURE_SUBSCRIBER_JWT_KEY:-!ChangeMe!}
     restart: unless-stopped
@@ -70,18 +70,19 @@ services:
       - target: 443
         published: 443
         protocol: udp
-
   database:
-    image: postgres:13-alpine
-    environment:
-      - POSTGRES_DB=api
-      - POSTGRES_PASSWORD=!ChangeMe!
-      - POSTGRES_USER=api-platform
-    volumes:
-      - db_data:/var/lib/postgresql/data:rw
-      # you may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      # - ./api/docker/db/data:/var/lib/postgresql/data:rw
-
+      image: percona:5.7
+      environment:
+          - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-nopassword}
+          - MYSQL_DATABASE=sylius_${APP_ENV}
+          - MYSQL_USER=${MYSQL_USER:-sylius}
+          - MYSQL_PASSWORD=${MYSQL_PASSWORD:-nopassword}
+      volumes:
+          - db_data:/var/lib/mysql:rw
+          # you may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
+           #- ./api/docker/mysql/data:/var/lib/mysql:rw,delegated
+      ports:
+          - "3306:3306"
 volumes:
   php_socket:
   db_data:

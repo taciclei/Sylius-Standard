@@ -93,6 +93,7 @@ VOLUME /var/run/php
 # https://getcomposer.org/doc/03-cli.md#composer-allow-superuser
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV COMPOSER_MEMORY_LIMIT=-1
+ENV COMPOSE_HTTP_TIMEOUT=600
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
 
 WORKDIR /srv/api
@@ -103,7 +104,7 @@ ARG APP_ENV=prod
 # prevent the reinstallation of vendors at every changes in the source code
 COPY composer.json composer.lock symfony.lock ./
 RUN set -eux; \
-	composer install --prefer-source --prefer-dist --no-dev --no-scripts --no-progress; \
+	composer install --prefer-dist --no-dev --no-scripts --no-progress; \
 	composer clear-cache
 
 # copy only specifically what we need
@@ -117,11 +118,10 @@ COPY templates templates/
 COPY translations translations/
 # only for demo
 COPY fixtures fixtures/
-
 RUN set -eux; \
 	mkdir -p var/cache var/log; \
-	composer dump-autoload --classmap-authoritative; \
-	APP_SECRET='' composer run-script post-install-cmd; \
+	COMPOSER_MEMORY_LIMIT=-1 composer dump-autoload --classmap-authoritative; \
+	#COMPOSER_MEMORY_LIMIT=-1 composer run-script post-install-cmd; \
 	chmod +x bin/console; sync; \
 	bin/console sylius:install:assets; \
 	bin/console sylius:theme:assets:install public

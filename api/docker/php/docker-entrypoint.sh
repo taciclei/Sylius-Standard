@@ -62,7 +62,7 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'php' ] || [ "$1" = 'bin/console' ]; then
 
 		if [ "$APP_ENV" != 'prod' ]; then
 			echo "Load fixtures"
-			bin/console hautelook:fixtures:load --no-interaction
+			bin/console sylius:fixtures:load --no-interaction
 		fi
 	fi
 fi

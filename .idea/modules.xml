@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Sylius-Standard.iml" filepath="$PROJECT_DIR$/.idea/Sylius-Standard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sylius-Standard.iml" filepath="$PROJECT_DIR$/Sylius-Standard.iml" />
     </modules>
   </component>
 </project>
